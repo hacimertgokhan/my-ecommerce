@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87e985a5-f729-4d23-863c-52e9ba96487a" name="Changes" comment="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi." />
+    <list default="true" id="87e985a5-f729-4d23-863c-52e9ba96487a" name="Changes" comment="v2.0.1-rc products/[id]/page için PropTypes güncellemesi.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/products/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[locale]/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/products/page.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "hacimertgokhan"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/hacimertgokhan/my-ecommerce.git",
@@ -107,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758354085069</updated>
       <workItem from="1758354086205" duration="9972000" />
-      <workItem from="1758379975555" duration="3857000" />
+      <workItem from="1758379975555" duration="4453000" />
     </task>
     <task id="LOCAL-00001" summary="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi.">
       <option name="closed" value="true" />
@@ -117,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758384052664</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v2.0.1-rc products/[id]/page için PropTypes güncellemesi.">
+      <option name="closed" value="true" />
+      <created>1758384388375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758384388375</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi." />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi." />
+    <MESSAGE value="v2.0.1-rc products/[id]/page için PropTypes güncellemesi." />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0.1-rc products/[id]/page için PropTypes güncellemesi." />
   </component>
 </project>

@@ -1,5 +1,3 @@
-// app/[locale]/products/[id]/page.tsx
-
 import { getProductById, getProducts } from "@/lib/api";
 import { Metadata } from 'next';
 import { getTranslations } from "next-intl/server";
@@ -21,10 +19,6 @@ type Product = {
     };
 };
 
-type Props = {
-    params: { id: string, locale: string };
-};
-
 export async function generateStaticParams() {
     const products: Product[] = await getProducts();
 
@@ -33,7 +27,8 @@ export async function generateStaticParams() {
     }));
 }
 
-export async function generateMetadata({ params: { id } }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+    const { id } = await params;
     const product: Product = await getProductById(id);
 
     if (!product) {
@@ -72,9 +67,14 @@ const Breadcrumbs = ({ product, locale, t }: { product: Product, locale: string,
     </nav>
 );
 
-export default async function ProductDetailPage({ params: { id, locale } }: Props) {
+export default async function ProductDetailPage({ params }: { params: Promise<{ id: string, locale: string }> }) {
+    const { id, locale } = await params; // await params here
     const product: Product = await getProductById(id);
     const t = await getTranslations('ProductDetailPage');
+
+    if (!product) {
+        return <div>Product not found.</div>;
+    }
 
     const images = [product.image, product.image, product.image, product.image];
 
@@ -124,7 +124,7 @@ export default async function ProductDetailPage({ params: { id, locale } }: Prop
                             </div>
                         </div>
 
-                        <div className="mt-auto pt-8"> {/* mt-auto ve pt-8 ile butonu aşağıya iter */}
+                        <div className="mt-auto pt-8">
                             <p className="text-sm font-semibold text-green-600 mb-4">{t('inStock')}</p>
                             <AddToCartButton product={product} />
                         </div>

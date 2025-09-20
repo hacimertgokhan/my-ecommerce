@@ -3,11 +3,11 @@ import ProductList from "@/components/product/productList";
 import { ArrowRight, Mail } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
-export default async function ProductsPage({ params }: { params: { locale: string } }) {
+export default async function ProductsPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     const products = await getProducts();
     const categories = await getCategories();
     const t = await getTranslations('ProductsPage');
-    const { locale } = await params;
 
     return (
         <div className="min-h-screen bg-slate-50 text-slate-900">
