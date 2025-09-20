@@ -62,6 +62,7 @@ const CartClient = () => {
                                         alt={product.title}
                                         width={120}
                                         height={120}
+                                        loading="lazy"
                                         className="object-contain w-24 h-24 sm:w-32 sm:h-32 rounded-lg border p-2 bg-white"
                                     />
                                 </div>

@@ -93,6 +93,7 @@ const FeaturedProductsSection = ({ t, products, locale }: { t: any, products: an
                                 alt={product.title}
                                 width={400}
                                 height={400}
+                                loading="lazy"
                                 className="h-full w-full object-contain object-center p-4 group-hover:opacity-80 transition-opacity duration-300"
                             />
                         </div>
@@ -121,7 +122,7 @@ const TestimonialSection = ({ t }: { t: any }) => (
                     <p>“{t('testimonial.quote')}”</p>
                 </blockquote>
                 <figcaption className="mt-8 flex items-center justify-center space-x-4">
-                    <Image className="w-12 h-12 rounded-full" src="https://i.pravatar.cc/150?u=a042581f4e29026704d" width={48} height={48} alt={t('testimonial.author')} />
+                    <Image className="w-12 h-12 rounded-full" src="https://i.pravatar.cc/150?u=a042581f4e29026704d" width={48} height={48} loading="lazy" alt={t('testimonial.author')} />
                     <div>
                         <div className="font-semibold text-slate-900">{t('testimonial.author')}</div>
                         <div className="mt-0.5 text-sm text-slate-600">{t('testimonial.role')}</div>

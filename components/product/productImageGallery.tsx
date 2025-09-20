@@ -18,6 +18,7 @@ export default function ProductImageGallery({ images, alt }: Props) {
                     src={selectedImage}
                     alt={alt}
                     fill
+                    loading="lazy"
                     style={{ objectFit: 'contain', padding: '1.5rem' }}
                     className="transition-opacity duration-300 ease-in-out"
                     priority
@@ -40,6 +41,7 @@ export default function ProductImageGallery({ images, alt }: Props) {
                             src={image}
                             alt={`${alt} thumbnail ${index + 1}`}
                             fill
+                            loading="lazy"
                             style={{ objectFit: 'cover' }}
                             sizes="20vw"
                         />

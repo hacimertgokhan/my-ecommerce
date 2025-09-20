@@ -31,6 +31,7 @@ const ProductCard = ({ product, locale }: ProductCardProps) => {
                         src={product.image}
                         alt={product.title}
                         fill
+                        loading="lazy"
                         style={{ objectFit: "contain" }}
                         className="p-6 max-w-3xl max-h-96 group-hover:scale-110 transition-transform duration-700 ease-out"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -91,6 +91,7 @@ export default function CartPopover({ isOpen, onClose, locale }: CartPopoverProp
                                             alt={product.title}
                                             width={64}
                                             height={64}
+                                            loading="lazy"
                                             className="h-full w-full object-contain object-center hover:scale-105 transition-transform duration-200"
                                         />
                                     </div>
