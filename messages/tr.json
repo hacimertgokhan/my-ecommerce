@@ -1,0 +1,150 @@
+{
+  "Header": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "cart": "Sepet"
+  },
+  "ProductsPage": {
+    "hero": {
+      "title": "Modern Yaşam İçin Tasarlandı",
+      "subtitle": "Biçim, işlev ve kalıcı kaliteyi bir araya getirmek için özenle tasarlanmış seçkin ürün koleksiyonumuzu keşfedin.",
+      "ctaButton": "Koleksiyonu Keşfet"
+    },
+    "cta": {
+      "title": "Ayrıcalıklardan Haberdar Olun",
+      "subtitle": "Özel teklifler, yeni ürünlere erken erişim ve tasarım ilhamı almak için bültenimize katılın.",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "submitButton": "Abone Ol"
+    }
+  },
+  "ProductListPage": {
+    "filters": "Filtreler",
+    "allProducts": "Tüm Ürünler",
+    "filterByCategory": "Kategoriye Göre Filtrele",
+    "allCategories": "Tüm Kategoriler",
+    "sortByPrice": "Fiyata Göre Sırala",
+    "priceLowToHigh": "Fiyat: Düşükten Yükseğe",
+    "priceHighToLow": "Fiyat: Yüksekten Düşüğe",
+    "priceRange": "Fiyat Aralığı"
+  },
+  "Global": {
+    "navigation": {
+      "logo": "E-Mağaza",
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "cart": "Sepet",
+      "features": "Neden Biz?",
+      "showcase": "Yorumlar",
+      "catalog": "Katalog",
+      "faq": "SSS"
+    },
+    "newsletterCta": {
+      "title": "En Son Fırsatlardan Haberdar Olun",
+      "subtitle": "Yeni gelen ürünler, özel indirimler ve kampanyalar hakkında ilk siz bilgi sahibi olmak için bültenimize kaydolun.",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "submitButton": "Abone Ol"
+    },
+    "footer": {
+      "copyright": "E-Mağaza. Tüm hakları saklıdır."
+    }
+  },
+  "OnePage": {
+    "hero": {
+      "title": "Hayalinizdeki Ürünleri Keşfedin ve Satın Alın",
+      "subtitle": "Kalite, stil ve yeniliği bir araya getiren özenle seçilmiş koleksiyonumuzla alışveriş deneyiminizi bir üst seviyeye taşıyın.",
+      "ctaButton": "Tüm Ürünleri Gör"
+    },
+    "features": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "subtitle": "Size en iyi alışveriş deneyimini sunmak için tutkuyla çalışıyoruz.",
+      "items": [
+        {
+          "title": "Güvenilir Kalite",
+          "description": "Her ürün, dayanıklılık ve mükemmellik standartlarımızı karşıladığından emin olmak için özenle seçilir."
+        },
+        {
+          "title": "Hızlı ve Güvenli Teslimat",
+          "description": "Siparişlerinizi en kısa sürede ve güvenli bir şekilde kapınıza kadar ulaştırıyoruz."
+        },
+        {
+          "title": "Çevre Dostu Seçenekler",
+          "description": "Sürdürülebilirliğe olan bağlılığımızı yansıtan çevre dostu ürün seçenekleri sunuyoruz."
+        }
+      ]
+    },
+    "featured": {
+      "title": "Yeni Gelenler",
+      "subtitle": "Koleksiyonumuza en son eklenenleri inceleyin. Yepyeni tasarımlar şimdi stokta.",
+      "viewAllButton": "Tüm Ürünleri Gör"
+    },
+    "testimonial": {
+      "quote": "Bu platformda alışveriş yapmak inanılmaz bir deneyimdi. Ürün kalitesi beklentilerimin çok ötesindeydi ve müşteri hizmetleri harikaydı!",
+      "author": "Ayşe Yılmaz",
+      "role": "Memnun Müşteri"
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "Aklınızda bir soru mu var? Cevapları burada bulabilirsiniz.",
+      "items": [
+        {
+          "q": "Siparişimi nasıl takip edebilirim?",
+          "a": "Siparişiniz kargoya verildikten sonra size bir takip numarası içeren bir e-posta göndereceğiz. Bu numara ile kargonuzun durumunu anlık olarak takip edebilirsiniz."
+        },
+        {
+          "q": "İade politikanız nedir?",
+          "a": "Ürünü teslim aldıktan sonraki 30 gün içinde koşulsuz iade hakkınız bulunmaktadır. Detaylı bilgi için iade politikası sayfamızı ziyaret edebilirsiniz."
+        },
+        {
+          "q": "Uluslararası gönderim yapıyor musunuz?",
+          "a": "Evet, dünya genelinde birçok ülkeye gönderim yapıyoruz. Ödeme sayfasında ülkenizi seçerek gönderim seçeneklerini ve ücretlerini görebilirsiniz."
+        }
+      ]
+    }
+  },
+  "ProductList": {
+    "title": "Tüm Koleksiyonumuz",
+    "subtitle": "Göz atın, filtreleyin ve aradığınızı tam olarak bulun.",
+    "filterByCategory": "Kategoriye Göre Filtrele",
+    "allCategories": "Tüm Kategoriler",
+    "sortBy": "Sıralama Ölçütü",
+    "sort": {
+      "featured": "Öne Çıkanlar",
+      "priceLowToHigh": "Fiyat: Düşükten Yükseğe",
+      "priceHighToLow": "Fiyat: Yüksekten Düşüğe"
+    },
+    "noProductsFound": "Kriterlerinize uygun ürün bulunamadı.",
+    "clearFilters": "Filtreleri Temizle"
+  },
+  "ProductDetailPage": {
+    "addToCart": "Sepete Ekle",
+    "description": "Açıklama",
+    "category": "Kategori",
+    "inStock": "Stokta Mevcut",
+    "reviews": "Değerlendirme",
+    "features": "Öne Çıkan Özellikler",
+    "breadcrumbs": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler"
+    }
+  },
+  "CartPage": {
+    "shoppingCart": "Alışveriş Sepetiniz",
+    "cartPageSubtitle": "Sepetinizde {count, plural, one {# ürün} other {# ürün}} bulunmaktadır.",
+    "product": "Ürün",
+    "quantity": "Adet",
+    "price": "Fiyat",
+    "total": "Toplam",
+    "emptyCartTitle": "Sepetiniz boş",
+    "emptyCartSubtitle": "Görünüşe göre henüz bir şey eklemediniz.",
+    "continueShopping": "Alışverişe Başla",
+    "subtotal": "Ara Toplam",
+    "remove": "Kaldır",
+    "each": "tanesi",
+    "orderSummary": "Sipariş Özeti",
+    "shippingEstimate": "Tahmini Kargo Ücreti",
+    "free": "Ücretsiz",
+    "orderTotal": "Sipariş Toplamı",
+    "checkout": "Ödemeye Geç",
+    "clearCart": "Sepeti Temizle"
+  }
+}
