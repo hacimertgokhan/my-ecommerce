@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87e985a5-f729-4d23-863c-52e9ba96487a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/[locale]/cart/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/[locale]/products/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/[locale]/products/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/i18n/navigation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/i18n/request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/i18n/routing.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/cart/cartClient.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/cart/cartPopover.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/product/addToCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/product/productCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/product/productImageGallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/product/productList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/cartProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/providers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useOnClickOutside.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messages/tr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/features/cart/cartSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/hooks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="87e985a5-f729-4d23-863c-52e9ba96487a" name="Changes" comment="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +21,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/hacimertgokhan/my-ecommerce.git",
+    "accountId": "360c0e56-b6f1-4cc7-a148-8b8c864ba4a8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -134,11 +107,24 @@
       <option name="presentableId" value="Default" />
       <updated>1758354085069</updated>
       <workItem from="1758354086205" duration="9972000" />
-      <workItem from="1758379975555" duration="3542000" />
+      <workItem from="1758379975555" duration="3857000" />
     </task>
+    <task id="LOCAL-00001" summary="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi.">
+      <option name="closed" value="true" />
+      <created>1758384052664</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758384052664</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi." />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0.0-rc, Genel proje yüklemesi ve güncellemesi. Footer, Header ve ProductCard tasarımları eklendi. Popover için useOnClickOutside hook sistemi geliştirildi." />
   </component>
 </project>

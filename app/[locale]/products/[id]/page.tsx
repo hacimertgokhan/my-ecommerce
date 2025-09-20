@@ -1,25 +1,54 @@
+// app/[locale]/products/[id]/page.tsx
 
 import { getProductById, getProducts } from "@/lib/api";
 import { Metadata } from 'next';
-import AddToCartButton from "@/components/product/addToCard";
 import { getTranslations } from "next-intl/server";
-import { Star, ChevronRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import { Star, ChevronRight, CheckCircle2 } from "lucide-react";
+import AddToCartButton from "@/components/product/addToCard";
 import ProductImageGallery from "@/components/product/productImageGallery";
+
+type Product = {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+    rating: {
+        rate: number;
+        count: number;
+    };
+};
 
 type Props = {
     params: { id: string, locale: string };
 };
 
+export async function generateStaticParams() {
+    const products: Product[] = await getProducts();
+
+    return products.map((product) => ({
+        id: product.id.toString(),
+    }));
+}
+
 export async function generateMetadata({ params: { id } }: Props): Promise<Metadata> {
-    const product = await getProductById(id);
+    const product: Product = await getProductById(id);
+
+    if (!product) {
+        return {
+            title: 'Product Not Found',
+        };
+    }
+
     return {
         title: product.title,
         description: product.description,
     };
 }
 
-const Breadcrumbs = ({ product, locale, t }: { product: any, locale: string, t: any }) => (
+const Breadcrumbs = ({ product, locale, t }: { product: Product, locale: string, t: any }) => (
     <nav aria-label="Breadcrumb" className="mb-6">
         <ol role="list" className="flex items-center space-x-2 text-sm">
             <li>
@@ -44,14 +73,14 @@ const Breadcrumbs = ({ product, locale, t }: { product: any, locale: string, t: 
 );
 
 export default async function ProductDetailPage({ params: { id, locale } }: Props) {
-    const product = await getProductById(id);
+    const product: Product = await getProductById(id);
     const t = await getTranslations('ProductDetailPage');
 
     const images = [product.image, product.image, product.image, product.image];
 
     return (
         <div className="bg-slate-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <div className="container mx-auto px-4 py-16 sm:py-24">
                 <Breadcrumbs product={product} locale={locale} t={t} />
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
@@ -88,14 +117,14 @@ export default async function ProductDetailPage({ params: { id, locale } }: Prop
                             <div className="border-t border-slate-200 pt-6">
                                 <h3 className="font-semibold text-slate-800">{t('features')}</h3>
                                 <ul className="mt-3 space-y-2 text-sm">
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500"/> Premium Material</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500"/> Handcrafted Design</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500"/> 30-Day Money-Back Guarantee</li>
+                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Premium Material</li>
+                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Handcrafted Design</li>
+                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> 30-Day Money-Back Guarantee</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="mt-8">
+                        <div className="mt-auto pt-8"> {/* mt-auto ve pt-8 ile butonu aşağıya iter */}
                             <p className="text-sm font-semibold text-green-600 mb-4">{t('inStock')}</p>
                             <AddToCartButton product={product} />
                         </div>
